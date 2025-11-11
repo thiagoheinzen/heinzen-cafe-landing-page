@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heinzen Café</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="sass/style.css">
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="container header__content">
+      <a href="#" class="logo-link">
+        <img class="logo" src="assets/logoheinzencafe.png" alt="Logo da empresa Heinzen Café">
+      </a>
+      <button class="hamburger" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#menu">Cardápio</a></li>
+          <li><a href="#testimonials">Depoimentos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="hero" data-aos="fade-up">
+    <div class="container hero__content">
+      <h2>Sinta o aroma, prove a paixão</h2>
+      <p>O melhor café artesanal para momentos inesquecíveis</p>
+      <a href="#menu" class="btn btn--primary">Ver cardápio</a>
+      <a href="#contact" class="btn btn--primary">Peça agora</a>
+    </div>
+  </section>
+
+
+  <section id="about" class="about" data-aos="fade-up">
+    <div class="container about__content">
+      <div class="about__carousel" tabindex="0" aria-roledescription="carrossel" aria-label="Fotos sobre Heinzen Café">
+
+        <div class="about_carousel_img" aria-hidden="false">
+
+          <img src="./assets/sobre_img1.jpg" alt="Sobre Heinzen Café">
+          <!-- Foto de <a href="https://unsplash.com/pt-br/@kfred?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Karl Fredrickson</a> na <a href="https://unsplash.com/pt-br/fotografias/pessoa-enchendo-recipiente-de-vidro-TYIzeCiZ_60?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+
+        </div>
+
+        <div class="about_carousel_img" aria-hidden="true">
+
+          <img src="./assets/sobre_img2.jpg" alt="Sobre Heinzen Café">
+          <!-- Foto de <a href="https://unsplash.com/pt-br/@rodlong?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rod Long</a> na <a href="https://unsplash.com/pt-br/fotografias/grupo-de-pessoas-comendo-no-restaurante-I79Pgmhmy5M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+
+        </div>
+
+        <div class="about_carousel_img" aria-hidden="true">
+
+          <img src="./assets/sobre_img3.jpg" alt="Sobre Heinzen Café">
+          <!-- Foto de <a href="https://unsplash.com/pt-br/@daanelise?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">daan evers</a> na <a href="https://unsplash.com/pt-br/fotografias/interior-de-um-cafe-tKN1WXrzQ3s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+       -->
+
+        </div>
+
+        <button class="about__control about__control--prev" aria-label="Anterior" aria-controls="about__carousel" type="button">&#10094;</button>
+        <button class="about__control about__control--next" aria-label="Próximo" aria-controls="about__carousel" type="button">&#10095;</button>
+      </div>
+
+        <div class="about__text">
+          <h3>Sobre nós</h3>
+          <p>
+            No Heinzen Café, cada xícara é feita com grãos selecionados e muito carinho no preparo.
+            Mais do que uma cafeteria, somos um ponto de encontro para quem busca aconchego, boas conversas e momentos
+            especiais.
+            Nosso ambiente foi pensado para unir conforto e estilo, com aromas que despertam memórias e sabores que
+            conquistam a cada gole.
+            Além dos cafés artesanais, oferecemos uma seleção de chás, sobremesas e quitutes preparados com ingredientes
+            de qualidade.
+            Aqui, cada detalhe é feito para que você se sinta em casa e aproveite experiências únicas todos os dias.
+          </p>
+
+        </div>
+  </section>
+
+
+  <section id="menu" class="menu" data-aos="fade-up">
+    <div class="container">
+      <h2>Nosso cardápio</h2>
+
+      <div class="menu__items">
+        <div class="menu__item">
+          <img src="./assets/espresso.jpg" alt="Espresso Clássico">
+          <!-- Foto de <a href="https://unsplash.com/pt-br/@sysengineer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nicolas Horn</a> na <a href="https://unsplash.com/pt-br/fotografias/xicara-de-cha-de-ceramica-branca-na-maquina-de-cafe-expresso-preta-tu0vblhVh_k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+          <h3>Espresso</h3>
+          <p>O tradicional, intenso e encorpado.</p>
+        </div>
+
+        <div class="menu__item">
+          <img src="./assets/cappuccino.jpg" alt="Cappuccino Cremoso">
+          <!-- Foto de <a href="https://unsplash.com/pt-br/@mkubisky?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Michael Kubisky</a> na <a href="https://unsplash.com/pt-br/fotografias/cafe-com-leite-em-cima-da-mesa-P5JMfBAo_i8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+          <h3>Cappuccino</h3>
+          <p>Equilíbrio entre café, leite vaporizado e espuma.</p>
+        </div>
+
+        <div class="menu__item">
+          <img src="./assets/latte-macchiato.jpg" alt="Latte Macchiato">
+          <!-- Foto de <a href="https://unsplash.com/pt-br/@skies457?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Di Weng</a> na <a href="https://unsplash.com/pt-br/fotografias/um-copo-de-cerveja-em-uma-montanha-russa-Qjz2RJuSFs0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+          <h3>Latte macchiato</h3>
+          <p>Leite vaporizado suavemente marcado pelo espresso.</p>
+        </div>
+
+        <div class="menu__item">
+          <img src="./assets/mocha.jpg" alt="Mocha com Chocolate">
+          <!-- Foto de <a href="https://unsplash.com/pt-br/@safaaalmohandis?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Safaa Almohandis</a> na <a href="https://unsplash.com/pt-br/fotografias/copo-de-ceramica-branco-no-pires-de-ceramica-branco-DMzRTfmsl5A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+          <h3>Mocha</h3>
+          <p>Café, leite vaporizado e calda de chocolate.</p>
+        </div>
+
+        <div class="menu__item">
+          <img src="./assets/iced-coffee.jpg" alt="Café Gelado">
+          <!-- Foto de <a href="https://unsplash.com/pt-br/@qqquack_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Youwoon Park</a> na <a href="https://unsplash.com/pt-br/fotografias/um-par-de-bebidas-sentado-em-cima-de-uma-mesa-aPeyLdY2Pvo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+          <h3>Café gelado</h3>
+          <p>Refrescante e energizante, perfeito para dias quentes.</p>
+        </div>
+
+        <div class="menu__item">
+          <img src="./assets/green-tea.jpg" alt="Chá Verde com Hortelã">
+          <!-- Foto de <a href="https://unsplash.com/pt-br/@jackandgracephotoco?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Suzanne Skeen</a> na <a href="https://unsplash.com/pt-br/fotografias/uma-xicara-de-cha-de-vidro-em-uma-mesa-SB_ZlhMPrGY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+          <h3>Chá verde com hortelã</h3>
+          <p>Refrescância natural e sabor leve.</p>
+        </div>
+
+        <div class="menu__item">
+          <img src="./assets/hot-chocolate.jpg" alt="Chocolate Quente Artesanal">
+          <!-- Foto de <a href="https://unsplash.com/pt-br/@tabithaturnervisuals?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">tabitha turner</a> na <a href="https://unsplash.com/pt-br/fotografias/sorvete-em-copo-de-ceramica-branca-xXLZDf8RAX4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+          <h3>Chocolate quente</h3>
+          <p>Feito com chocolate de verdade, cremoso e intenso.</p>
+        </div>
+
+        <div class="menu__item">
+          <img src="./assets/smoothie.jpg" alt="Smoothie de Frutas Vermelhas">
+          <!-- Foto de <a href="https://unsplash.com/pt-br/@kofi_buckley?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kofi Buckley</a> na <a href="https://unsplash.com/pt-br/fotografias/uma-bebida-cor-de-rosa-em-um-frasco-de-pedreiro-em-um-fundo-branco-RWjAFiWFj58?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+          <h3>Smoothie de frutas vermelhas</h3>
+          <p>Frutas frescas batidas com iogurte natural.</p>
+        </div>
+
+        <div class="menu__item">
+          <img src="./assets/croissant.jpg" alt="Croissant de chocolate">
+          <!-- Foto de <a href="https://unsplash.com/pt-br/@min_square97?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Min Square_97</a> na <a href="https://unsplash.com/pt-br/fotografias/um-croissant-com-nozes-em-cima-de-um-prato-HtSMEqCKdcc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+          <h3>Croissant de chocolate</h3>
+          <p>Massa folhada amanteigada com recheio de chocolate.</p>
+        </div>
+
+        <div class="menu__item">
+          <img src="./assets/pao-de-queijo.jpg" alt="Pão de Queijo Mineiro">
+          <h3>Pão de queijo</h3>
+          <p>Tradicional receita mineira, irresistível.</p>
+        </div>
+
+        <div class="menu__item">
+          <img src="./assets/sanduiche-natural.jpg" alt="Sanduíche Natural">
+          <h3>Sanduíche natural</h3>
+          <p>Pão integral, tomate e rúcula.</p>
+        </div>
+
+        <div class="menu__item">
+          <img src="./assets/cupcake.jpg" alt="Cupcake">
+          <!-- Foto de <a href="https://unsplash.com/pt-br/@mealontheplate?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Melissia Ohol</a> na <a href="https://unsplash.com/pt-br/fotografias/cupcake-marrom-e-branco-com-cereja-branca-em-placa-de-ceramica-branca-7dhnDG46L2E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+          <h3>Cupcake</h3>
+          <p>Cupcake com creme e gotas de chocolate.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="testimonials" class="testimonials" data-aos="fade-up">
+    <div class="container">
+      <h3>O que dizem nossos clientes</h3>
+      <div class="testimonials__carousel" tabindex="0" aria-roledescription="carrossel"
+        aria-label="Depoimentos de clientes">
+        <div class="testimonial" aria-hidden="false">
+          <blockquote>
+            "Como nômade digital, já tomei café em muitos lugares, mas o Heinzen se tornou meu escritório favorito. O
+            Wi-Fi é excelente, a mesa de tortas caseiras é tentadora e o latte art sempre impressiona! O equilíbrio
+            perfeito entre produtividade e momentos de prazer. Um achado para quem busca qualidade e bom gosto!"
+            <cite>- João Pereira</cite>
+          </blockquote>
+          <img src="https://i.pravatar.cc/400?img=17" alt="Foto de perfil de João Pereira" class="testimonial__avatar">
+        </div>
+
+        <div class="testimonial" aria-hidden="true">
+          <blockquote>
+            "O Heinzen Café é a minha parada obrigatória! O aroma que invade a rua já é convidativo, mas o sabor do
+            café, sempre perfeito, é que me conquistou. Os baristas são superatenciosos e o ambiente é o point ideal
+            para um bom encontro ou para trabalhar. Cada visita é uma experiência sensorial completa. Recomendo demais!"
+            <cite>- Maria Lima</cite>
+          </blockquote>
+          <img src="https://i.pravatar.cc/400?img=49" alt="Foto de perfil de Maria Lima" class="testimonial__avatar">
+        </div>
+
+        <div class="testimonial" aria-hidden="true">
+          <blockquote>
+            "Descobri o Heinzen Café por indicação e foi amor à primeira xícara! O capuccino cremoso e os doces caseiros
+            são imbatíveis. O ambiente aconchegante e a música suave fazem do lugar meu refúgio preferido na cidade.
+            Atenção de qualidade e sabor que transformam qualquer pausa em um momento especial. Já me sinto em casa!"
+            <cite>- Carlos Santos</cite>
+          </blockquote>
+          <img src="https://i.pravatar.cc/400?img=51" alt="Foto de perfil de Carlos Santos" class="testimonial__avatar">
+        </div>
+        <button class="testimonial__control testimonial__control--prev" aria-label="Depoimento anterior"
+          type="button">&#10094;</button>
+        <button class="testimonial__control testimonial__control--next" aria-label="Próximo depoimento"
+          type="button">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="address" class="address" data-aos="fade-up">
+    <div class="container">
+      <h3>Venha nos visitar</h3>
+      <iframe width="100%"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3555.1944889094443!2d-48.64929502488335!3d-26.992396796537207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b5f1bcb69591%3A0x92843aaffaeb2422!2sBalne%C3%A1rio%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1760306435044!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+
+  <section id="contact" class="cta" data-aos="fade-up">
+    <div class="container">
+      <h3>Faça seu pedido online</h3>
+      <a href="https://wa.me/+5511999999999" class="btn btn--primary">Falar no WhatsApp</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Heinzen Café - Todos os direitos reservados</p>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.facebook.com/">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

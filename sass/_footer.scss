@@ -1,0 +1,25 @@
+.footer {
+  background: $color-dark;
+  color: $color-light;
+  text-align: center;
+  padding: 2rem 1rem;
+
+  p {
+    margin: 0;
+  }
+
+  .footer__social {
+    margin-top: 1rem;
+
+    a {
+      color: $color-light;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+}

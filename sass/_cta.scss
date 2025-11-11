@@ -1,0 +1,23 @@
+.cta {
+  padding: 4rem 0;
+  background: $color-brown;
+  text-align: center;
+  color: white;
+
+  h3 {
+    font-size: 2rem;
+    color: $color-light;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn {
+    background: white;
+    color: $color-dark;
+    font-weight: bold;
+
+    &:hover {
+      background: $color-dark;
+      color: white;
+    }
+  }
+}

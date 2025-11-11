@@ -1,0 +1,161 @@
+@import 'variables';
+@import 'header';
+@import 'hero';
+@import 'about';
+@import 'menu';
+@import 'testimonials';
+@import 'address';
+@import 'cta';
+@import 'footer';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  font-family: $font-text;
+  background-color: $color-cream;
+  color: $color-dark;
+  margin: 0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-title;
+  color: $color-brown;
+}
+
+.container {
+  width: 90%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: $color-brown;
+  color: $color-light;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s, transform 0.2s;
+
+  &--primary {
+    background-color: $color-accent; 
+    color: white;
+  }
+
+  &:hover {
+    transform: translateY(-1px);
+    opacity: 0.95;
+  }
+
+  &:active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#about,
+#menu,
+#testimonials,
+#address,
+#contact {
+  scroll-margin-top: 120px;
+  
+  @media (max-width: 992px) {
+    scroll-margin-top: 100px;
+  }
+  
+  @media (max-width: 768px) {
+    scroll-margin-top: 80px;
+  }
+  
+  @media (max-width: 480px) {
+    scroll-margin-top: 70px;
+  }
+}
+
+#hero {
+  scroll-margin-top: 0;
+}
+
+section[id] {
+  scroll-margin-top: 100px;
+  
+  @media (max-width: 768px) {
+    scroll-margin-top: 80px;
+  }
+}
+
+#about:focus,
+#menu:focus,
+#testimonials:focus,
+#address:focus,
+#contact:focus {
+  outline: 2px dashed $color-accent;
+  outline-offset: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .about__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu__items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonials__list {
+    padding: 0 1rem;
+  }
+  
+  html {
+    scroll-padding-top: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    scroll-padding-top: 70px;
+  }
+}
+
+
+a:focus,
+button:focus,
+.btn:focus {
+  outline: 2px solid $color-accent;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  .btn {
+    transition: none;
+  }
+}
+
+@media (prefers-contrast: high) {
+  a:focus,
+  button:focus,
+  .btn:focus {
+    outline: 3px solid #000;
+  }
+}
