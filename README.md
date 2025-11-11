@@ -2,7 +2,7 @@
 
 Bem-vindo ao Heinzen Café, um modelo de landing page moderna e responsiva para cafeterias e casas de café. Este modelo foi projetado para destacar a atmosfera acolhedora e os produtos especiais do seu negócio de café.
 
-![Preview da Landing Page](/assets/preview.png)
+[Acesse aqui](https://heinzen-cafe.vercel.app/)
 
 ## 🚀 Recursos
 
