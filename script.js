@@ -112,29 +112,20 @@ AOS.init();
 })();
 
 (function () {
-  let carousel = document.querySelector('.testimonials__carousel');
+  const carousel = document.querySelector('.testimonials__carousel');
   if (!carousel) return;
 
-  let slides = Array.prototype.slice.call(carousel.querySelectorAll('.testimonial'));
+  const slides = Array.from(carousel.querySelectorAll('.testimonial'));
   if (slides.length <= 1) return;
 
   let currentIndex = 0;
+
   function showSlide(index) {
-    slides.forEach(function (el, i) {
-      let isActive = i === index;
+    slides.forEach((el, i) => {
+      const isActive = i === index;
       el.style.display = isActive ? 'block' : 'none';
       el.setAttribute('aria-hidden', isActive ? 'false' : 'true');
     });
-  }
-
-  showSlide(currentIndex);
-
-  let prevBtn = carousel.querySelector('.testimonial__control--prev');
-  let nextBtn = carousel.querySelector('.testimonial__control--next');
-
-  function goPrev() {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    showSlide(currentIndex);
   }
 
   function goNext() {
@@ -142,73 +133,35 @@ AOS.init();
     showSlide(currentIndex);
   }
 
-  if (prevBtn) prevBtn.addEventListener('click', goPrev);
-  if (nextBtn) nextBtn.addEventListener('click', goNext);
+  function goPrev() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+  }
 
+  showSlide(currentIndex);
 
-  carousel.addEventListener('keydown', function (e) {
-    if (e.key === 'ArrowLeft') {
-      e.preventDefault();
-      goPrev();
-    } else if (e.key === 'ArrowRight') {
-      e.preventDefault();
-      goNext();
-    }
-  });
+  let interval = setInterval(goNext, 7000);
 
-  let touchStartX = null;
-  let touchStartY = null;
-  const SWIPE_THRESHOLD = 40;
+  carousel.addEventListener('mouseenter', () => clearInterval(interval));
+  carousel.addEventListener('mouseleave', () => interval = setInterval(goNext, 7000));
 
-  carousel.addEventListener('touchstart', function (e) {
-    const t = e.changedTouches && e.changedTouches[0];
-    if (!t) return;
-    touchStartX = t.clientX;
-    touchStartY = t.clientY;
-  }, { passive: true });
-
-  carousel.addEventListener('touchend', function (e) {
-    const t = e.changedTouches && e.changedTouches[0];
-    if (!t || touchStartX === null || touchStartY === null) return;
-    const dx = t.clientX - touchStartX;
-    const dy = t.clientY - touchStartY;
-    if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > SWIPE_THRESHOLD) {
-      if (dx < 0) {
-        goNext();
-      } else {
-        goPrev();
-      }
-    }
-    touchStartX = null;
-    touchStartY = null;
-  }, { passive: true });
 })();
 
-// Carousel da seção About
 (function () {
-  let carousel = document.querySelector('.about__carousel');
+  const carousel = document.querySelector('.about__carousel');
   if (!carousel) return;
 
-  let slides = Array.prototype.slice.call(carousel.querySelectorAll('.about_carousel_img'));
+  const slides = Array.from(carousel.querySelectorAll('.about_carousel_img'));
   if (slides.length <= 1) return;
 
   let currentIndex = 0;
+
   function showSlide(index) {
-    slides.forEach(function (el, i) {
-      let isActive = i === index;
+    slides.forEach((el, i) => {
+      const isActive = i === index;
       el.style.display = isActive ? 'block' : 'none';
       el.setAttribute('aria-hidden', isActive ? 'false' : 'true');
     });
-  }
-
-  showSlide(currentIndex);
-
-  let prevBtn = carousel.querySelector('.about__control--prev');
-  let nextBtn = carousel.querySelector('.about__control--next');
-
-  function goPrev() {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    showSlide(currentIndex);
   }
 
   function goNext() {
@@ -216,45 +169,16 @@ AOS.init();
     showSlide(currentIndex);
   }
 
-  if (prevBtn) prevBtn.addEventListener('click', goPrev);
-  if (nextBtn) nextBtn.addEventListener('click', goNext);
+  function goPrev() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+  }
 
-  // Navegação por teclado
-  carousel.addEventListener('keydown', function (e) {
-    if (e.key === 'ArrowLeft') {
-      e.preventDefault();
-      goPrev();
-    } else if (e.key === 'ArrowRight') {
-      e.preventDefault();
-      goNext();
-    }
-  });
+  showSlide(currentIndex);
 
-  // Navegação por swipe em dispositivos touch
-  let touchStartX = null;
-  let touchStartY = null;
-  const SWIPE_THRESHOLD = 40;
+  let interval = setInterval(goNext, 5000);
 
-  carousel.addEventListener('touchstart', function (e) {
-    const t = e.changedTouches && e.changedTouches[0];
-    if (!t) return;
-    touchStartX = t.clientX;
-    touchStartY = t.clientY;
-  }, { passive: true });
+  carousel.addEventListener('mouseenter', () => clearInterval(interval));
+  carousel.addEventListener('mouseleave', () => interval = setInterval(goNext, 5000));
 
-  carousel.addEventListener('touchend', function (e) {
-    const t = e.changedTouches && e.changedTouches[0];
-    if (!t || touchStartX === null || touchStartY === null) return;
-    const dx = t.clientX - touchStartX;
-    const dy = t.clientY - touchStartY;
-    if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > SWIPE_THRESHOLD) {
-      if (dx < 0) {
-        goNext();
-      } else {
-        goPrev();
-      }
-    }
-    touchStartX = null;
-    touchStartY = null;
-  }, { passive: true });
 })();
