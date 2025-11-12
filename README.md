@@ -17,7 +17,6 @@ Bem-vindo ao Heinzen Café, um modelo de landing page moderna e responsiva para 
 - HTML5
 - CSS3 (com SASS/SCSS para estilização)
 - JavaScript (para interatividade)
-- [Font Awesome](https://fontawesome.com/) - Para ícones
 - [Google Fonts](https://fonts.google.com/) - Para tipografia
 
 ## 🖼️ Créditos de Imagens
@@ -30,10 +29,10 @@ Bem-vindo ao Heinzen Café, um modelo de landing page moderna e responsiva para 
 
 ## 🎨 Personalização
 
-1. **Cores**: As cores podem ser facilmente alteradas no arquivo `_variables.scss`
+1. **Cores e Fontes**: As cores e fontes podem ser facilmente alteradas no arquivo `_variables.scss`
 2. **Conteúdo**: Edite os textos diretamente no arquivo `index.html`
-3. **Imagens**: Substitua as imagens na pasta `images/` mantendo os mesmos nomes ou atualize os caminhos no HTML/CSS
-4. **Fontes**: Altere as fontes importadas no arquivo `_base.scss`
+3. **Imagens**: Substitua as imagens na pasta `assets/` mantendo os mesmos nomes ou atualize os caminhos no HTML/CSS
+
 
 ## 📱 Responsividade
 
