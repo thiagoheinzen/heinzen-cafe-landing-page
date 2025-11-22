@@ -85,14 +85,14 @@
   transform-origin: center;
 }
 .header .hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
+  transform: rotate(45deg) translate(4px, 4px);
 }
 .header .hamburger.active span:nth-child(2) {
   opacity: 0;
   transform: scale(0);
 }
 .header .hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(4px, -4px);
 }
 @media (max-width: 992px) {
   .header .header__content {
